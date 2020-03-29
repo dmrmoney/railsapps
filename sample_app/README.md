@@ -22,5 +22,15 @@ Assuming some workspace in which the operations are executed, e.g. ~/wkspc/.
 1. $ bundle install
 1. $ bundle update
 1. $ rails test # it should succeed, but with 0 tests.
+1. $ rails server # firefox: localhost:3000 should show "Yay! Rails page
+
+Create "Home" and "Help" static pages using a generator
+1. $ rails generate controller StaticPages home help
+1. Manually add a third static "About" page app/views/static_pages/about.html.erb. 
+1. Add related code to test/controllers/static_pages_controller_test.rb, config/routes.rb, controllers/static_pages_controller.rb. 
+1. The related code is checked in, either copy manually or use git checkout -- filenames
+
+
+
 
 
